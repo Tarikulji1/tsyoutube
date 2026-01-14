@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import { SearchBar, Videolist, VideoDetails} from "./components";
 import youtube from "./api/youtube";
@@ -37,6 +37,10 @@ export default function Home() {
 const onVideoSelect = (video: Video) => {
   setSelectedVideo(video);
 };
+
+useEffect(() => {
+  handleSubmit("Latest news");
+}, []);
 
   return (
     <>
