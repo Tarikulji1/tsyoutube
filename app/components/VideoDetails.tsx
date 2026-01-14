@@ -11,6 +11,7 @@ interface VideoProps {
       title: string;
       channelTitle: string;
       description: string;
+      thumbnails: any;
     };
   } | null;
 }
